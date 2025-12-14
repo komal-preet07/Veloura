@@ -100,3 +100,49 @@
     font-size: 24px;
   }
 }
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 16px 20px;
+  }
+
+  .footer-container {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-brand {
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    padding-bottom: 20px;
+  }
+
+  .brand-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+
+  .brand-tagline {
+    margin-bottom: 15px;
+  }
+
+  .social-icons {
+    gap: 20px;
+  }
+
+  .footer-links h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer-links ul {
+    display: none; 
+  }
+
+  .footer-bottom {
+    margin-top: 30px;
+    padding-top: 15px;
+    font-size: 12px;
+  }
+}

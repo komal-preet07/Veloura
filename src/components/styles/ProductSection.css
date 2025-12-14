@@ -82,3 +82,40 @@
 .add-to-cart:hover {
   background-color: #ff3385;
 }
+@media (max-width: 768px) {
+  .product-section {
+    border-radius: 40px 40px 0 0;
+    padding: 2rem 0; 
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-header h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  .scroll-container {
+    gap: 1.2rem;
+    padding: 0 1rem 1.5rem; 
+  }
+
+  .product-card {
+    min-width: 85%; 
+    padding: 0.8rem;
+  }
+
+  .product-card img {
+    margin-bottom: 0.8rem;
+  }
+
+  .add-to-cart {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+}

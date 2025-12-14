@@ -41,3 +41,19 @@
   background-color: #333;
   color: #ffffff;
 }
+
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 60vh;
+  }
+
+  .slide {
+    padding-bottom: 30px;
+    background-position: center;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}

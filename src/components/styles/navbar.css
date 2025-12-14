@@ -71,3 +71,30 @@
   background-color: #FAF3F0;
   border-bottom: 1px solid #EAE0DC;
 }
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .navbar-logo a {
+    font-size: 1.5rem;
+  }
+
+  .navbar-links {
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-links a {
+    font-size: 0.8rem;
+  }
+
+  .navbar-actions {
+    width: 100%;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

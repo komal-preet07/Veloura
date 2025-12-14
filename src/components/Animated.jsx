@@ -1,67 +1,26 @@
 import React from 'react';
+import './styles/Animated.css'; 
+
 import Animated from "../assets/Animated.png"; 
 import product from "../assets/product.png"; 
 
 const AnimatedSection = () => {
 
   const containerStyle = {
-    borderTop: '100px solid white',
-    backgroundImage: `url(${Animated})`, 
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    height: '400px',
-    width: '100%',
-    display: 'flex',            
-    paddingTop: '100px',
-    alignItems: 'center',       
-    justifyContent: 'center',   
-    position: 'relative',
-    overflow: 'visible'
+    backgroundImage: `url(${Animated})`,
   };
 
- 
-  const layoutGrid = {
-    display: 'grid',
-    gridTemplateColumns: '1fr 1.2fr 1fr', 
-    alignItems: 'center',
-    width: '90%',
-    maxWidth: '1400px',
-    margin: '0 auto',
-    zIndex: 2
-  };
-
-  // 3. Left Text Styling
-  const leftTextStyle = {
-    textAlign: 'right', 
-    color: '#333', 
-    paddingRight: '20px'
-  };
-
-
-  const rightTextStyle = {
-    textAlign: 'left',
-    color: '#333',
-    paddingLeft: '20px'
-  };
-
- 
   const productStyle = {
-    width: '600px',
-    maxWidth: '2000px',
     transform: 'rotate(-15deg) scale(1.1)', 
     filter: 'drop-shadow(10px 20px 30px rgba(0,0,0,0.3))', 
-    display: 'block',
-    margin: '0 auto',
-    zIndex: 10 
   };
 
   return (
-    <div style={containerStyle}>
+    <div className="animated-container" style={containerStyle}>
       
- 
-      <div style={layoutGrid}>
+      <div className="layout-grid">
         
-        <div style={leftTextStyle}>
+        <div className="left-text">
           <p style={{ letterSpacing: '2px', textTransform: 'uppercase', fontSize: '0.9rem', fontWeight: 'bold', marginBottom: '10px' }}>
             Introducing Veloura
           </p>
@@ -74,11 +33,11 @@ const AnimatedSection = () => {
         </div>
 
         <div style={{ textAlign: 'center' }}>
-           <img src={product} alt="Veloura Product" style={productStyle} />
+           <img src={product} alt="Veloura Product" className="product-image-display" style={productStyle} />
         </div>
 
 
-        <div style={rightTextStyle}>
+        <div className="right-text">
           <h3 style={{ fontSize: '1.5rem', marginBottom: '10px' }}>
             REVEAL YOUR RADIANCE
           </h3>
@@ -87,9 +46,9 @@ const AnimatedSection = () => {
           </h2>
           
           <ul style={{ listStyle: 'none', padding: 0, lineHeight: '2', fontWeight: '600' }}>
-             <li>+ SMOOTHS & HYDRATES</li>
-             <li>+ MINIMIZES PORES</li>
-             <li>+ GIVES VELVET FINISH</li>
+            <li>+ SMOOTHS & HYDRATES</li>
+            <li>+ MINIMIZES PORES</li>
+            <li>+ GIVES VELVET FINISH</li>
           </ul>
 
           <button style={{
